@@ -1,0 +1,300 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+                          body {
+                      font-family: Arial, sans-serif;
+                      margin: 0;
+                      padding: 0;
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      height: 100vh;
+                      background-color: #f9f9f9;
+                  }
+                  .dropdown-menu {
+                      display: flex;
+                      flex-wrap: wrap;
+                      background: #ffffff;
+                      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                      border-radius: 8px;
+                      padding: 20px;
+                      width: 800px;
+                      max-width: 90%;
+                  }
+                  .menu-section {
+                      flex: 1;
+                      min-width: 150px;
+                      margin: 10px;
+                  }
+                  .menu-section h4 {
+                      margin-bottom: 10px;
+                      font-size: 16px;
+                      font-weight: bold;
+                      color: #333;
+                  }
+                  .menu-section ul {
+                      list-style: none;
+                      padding: 0;
+                      margin: 0;
+                  }
+                  .menu-section ul li {
+                      margin-bottom: 8px;
+                      font-size: 14px;
+                      color: #555;
+                      cursor: pointer;
+                  }
+                  .menu-section ul li:hover {
+                      color: #007BFF;
+                  }
+                  .offer-section {
+                      flex: 1;
+                      min-width: 200px;
+                      text-align: center;
+                      margin: 10px;
+                  }
+                  .offer-section h4 {
+                      font-size: 24px;
+                      color: #FF3366;
+                      margin-bottom: 10px;
+                  }
+                  .offer-section button {
+                      background: #FF3366;
+                      color: white;
+                      border: none;
+                      padding: 10px 20px;
+                      font-size: 14px;
+                      border-radius: 4px;
+                      cursor: pointer;
+                      margin-top: 10px;
+                  }
+                  .offer-section button:hover {
+                      background: #e52d5a;
+                  }
+                  .offer-section img {
+                      margin-top: 15px;
+                      width: 100%;
+                      max-width: 150px;
+                      height: auto;
+                  }
+    </style>
+</head>
+<body>
+    <div class="dropdown-menu">
+        <div class="menu-section">
+            <h4>Man Clothes</h4>
+            <ul>
+                <li>Shirt</li>
+                <li>T-shirt</li>
+                <li>Pant</li>
+                <li>Underwear</li>
+            </ul>
+        </div>
+        <div class="menu-section">
+            <h4>Accessories</h4>
+            <ul>
+                <li>Belt</li>
+                <li>Hat</li>
+                <li>Watches</li>
+                <li>Sunglasses</li>
+            </ul>
+        </div>
+        <div class="menu-section">
+            <h4>Shoes</h4>
+            <ul>
+                <li>Sneakers</li>
+                <li>Sandals</li>
+                <li>Formal</li>
+                <li>Casual</li>
+            </ul>
+        </div>
+        <div class="menu-section">
+            <h4>Bags</h4>
+            <ul>
+                <li>Backpack</li>
+                <li>Crossbody Bags</li>
+                <li>Side Bags</li>
+                <li>Slides</li>
+            </ul>
+        </div>
+        <div class="menu-section">
+            <h4>Woman Clothes</h4>
+            <ul>
+                <li>Shirt</li>
+                <li>T-shirt</li>
+                <li>Pant</li>
+                <li>Underwear</li>
+            </ul>
+        </div>
+        <div class="offer-section">
+            <h4>40% OFF</h4>
+            <p>Limited time offer</p>
+            <button>Shop Now</button>
+            <img src="https://via.placeholder.com/150" alt="Offer Image">
+        </div>
+    </div>
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dropdown Menu</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+}
+
+.menu-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.dropdown-menu {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr) 1.5fr;
+  gap: 20px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 80%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.column h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.column ul li {
+  margin-bottom: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.column ul li:hover {
+  color: #e63946;
+}
+
+.offer-column {
+  text-align: center;
+  background-color: #fff3f3;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.offer p {
+  font-size: 16px;
+  color: #e63946;
+  font-weight: bold;
+  margin: 0 0 10px;
+}
+
+.offer button {
+  background-color: #e63946;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.offer button:hover {
+  background-color: #d62828;
+}
+
+  </style>
+</head>
+<body>
+  <div class="menu-container">
+    <div class="dropdown">
+      <div class="dropdown-menu">
+        <div class="column">
+          <h3>Man Clothes</h3>
+          <ul>
+            <li>Shirt</li>
+            <li>T-shirt</li>
+            <li>Pant</li>
+            <li>Underwear</li>
+          </ul>
+        </div>
+        <div class="column">
+          <h3>Accessories</h3>
+          <ul>
+            <li>Belt</li>
+            <li>Hat</li>
+            <li>Watches</li>
+            <li>Sunglasses</li>
+          </ul>
+        </div>
+        <div class="column">
+          <h3>Shoes</h3>
+          <ul>
+            <li>Sneakers</li>
+            <li>Sandals</li>
+            <li>Formal</li>
+            <li>Casual</li>
+          </ul>
+        </div>
+        <div class="column">
+          <h3>Bags</h3>
+          <ul>
+            <li>Backpack</li>
+            <li>Crossbody Bags</li>
+            <li>Side Bags</li>
+            <li>Slides</li>
+          </ul>
+        </div>
+        <div class="column">
+          <h3>Woman Clothes</h3>
+          <ul>
+            <li>Shirt</li>
+            <li>T-shirt</li>
+            <li>Pant</li>
+            <li>Underwear</li>
+          </ul>
+        </div>
+        <div class="column">
+          <h3>Accessories</h3>
+          <ul>
+            <li>Belt</li>
+            <li>Hat</li>
+            <li>Watches</li>
+            <li>Sunglasses</li>
+          </ul>
+        </div>
+        <div class="offer-column">
+          <div class="offer">
+            <p>40% OFF</p>
+            <p>Limited time offer</p>
+            <button>Shop Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

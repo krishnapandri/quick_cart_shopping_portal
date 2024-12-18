@@ -3,29 +3,8 @@ import { AppBar, Toolbar, Typography, InputBase, IconButton, Badge, MenuItem, Se
 import { Search, ShoppingCart, Person, Twitter, Facebook, Instagram } from '@mui/icons-material';
 import TextField from '@mui/material/TextField';
 import { styled, alpha } from '@mui/material/styles';
-import {
-  Menu,
-  Button,
-  ListItemIcon,
-  ListItemText, 
-} from '@mui/material';
-import { Menu as MenuIcon } from '@mui/icons-material';
-import {
-  Category as CategoryIcon,
-  Checkroom as FashionIcon,
-  Devices as ElectronicsIcon,
-  DirectionsBike as BikesIcon,
-  Home as HomeIcon,
-  CardGiftcard as GiftIcon,
-  MusicNote as MusicIcon,
-  HealthAndSafety as HealthIcon,
-  Pets as PetsIcon,
-  ChildCare as BabyToysIcon,
-  ShoppingCart as GroceriesIcon,
-  DirectionsCar as AutomotiveIcon,
-} from '@mui/icons-material';
-
-import Carousel from 'react-bootstrap/Carousel';
+import { Body } from './body';
+import { Category } from './newCategoryComp';
 
 const SearchBar = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -56,16 +35,8 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 
 
 
-const Header = () => {
-  const [anchorEl, setAnchorEl] = React.useState(null);
-  const open = Boolean(anchorEl);
-  const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
+const HomePage = () => {
   
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
   return (
     <>
       <AppBar position="static" color="default">
@@ -121,150 +92,9 @@ const Header = () => {
         </Toolbar>
       </AppBar>
 
-      <div>
-      <Button
-        variant="contained"
-        startIcon={<MenuIcon />}
-        onClick={handleClick}
-        sx={{
-          justifyContent:'left',
-          backgroundColor: '#f5f5f5',
-          color: '#000',
-          fontWeight: 'bold',
-          textTransform: 'none',
-          width: '200px',
-        }}
-      >
-        Categories
-      </Button>
+    <Body></Body>
 
 
-      <Menu
-        anchorEl={anchorEl}
-        open={open}
-        onClose={handleClose}
-        PaperProps={{
-          elevation: 2,
-          style: {
-            width: '250px',
-            borderRadius: '8px',
-            left:'-3px',  
-            top:'173px'
-          },
-        }}
-      >
-        {/* Category List */}
-        <MenuItem onClick={handleClose}>
-          <ListItemIcon>
-            <FashionIcon fontSize="small" />
-          </ListItemIcon>
-          <ListItemText>Fashion</ListItemText>
-        </MenuItem>
-
-        <MenuItem onClick={handleClose}>
-          <ListItemIcon>
-            <ElectronicsIcon fontSize="small" />
-          </ListItemIcon>
-          <ListItemText>Electronics</ListItemText>
-        </MenuItem>
-
-        <MenuItem onClick={handleClose}>
-          <ListItemIcon>
-            <BikesIcon fontSize="small" />
-          </ListItemIcon>
-          <ListItemText>Bikes</ListItemText>
-        </MenuItem>
-
-        <MenuItem onClick={handleClose}>
-          <ListItemIcon>
-            <HomeIcon fontSize="small" />
-          </ListItemIcon>
-          <ListItemText>Home & Garden</ListItemText>
-        </MenuItem>
-
-        <MenuItem onClick={handleClose}>
-          <ListItemIcon>
-            <GiftIcon fontSize="small" />
-          </ListItemIcon>
-          <ListItemText>Gifts</ListItemText>
-        </MenuItem>
-
-        <MenuItem onClick={handleClose}>
-          <ListItemIcon>
-            <MusicIcon fontSize="small" />
-          </ListItemIcon>
-          <ListItemText>Music</ListItemText>
-        </MenuItem>
-
-        <MenuItem onClick={handleClose}>
-          <ListItemIcon>
-            <HealthIcon fontSize="small" />
-          </ListItemIcon>
-          <ListItemText>Health & Beauty</ListItemText>
-        </MenuItem>
-
-        <MenuItem onClick={handleClose}>
-          <ListItemIcon>
-            <PetsIcon fontSize="small" />
-          </ListItemIcon>
-          <ListItemText>Pets</ListItemText>
-        </MenuItem>
-
-        <MenuItem onClick={handleClose}>
-          <ListItemIcon>
-            <BabyToysIcon fontSize="small" />
-          </ListItemIcon>
-          <ListItemText>Baby Toys</ListItemText>
-        </MenuItem>
-
-        <MenuItem onClick={handleClose}>
-          <ListItemIcon>
-            <GroceriesIcon fontSize="small" />
-          </ListItemIcon>
-          <ListItemText>Groceries</ListItemText>
-        </MenuItem>
-
-        <MenuItem onClick={handleClose}>
-          <ListItemIcon>
-            <AutomotiveIcon fontSize="small" />
-          </ListItemIcon>
-          <ListItemText>Automotive</ListItemText>
-        </MenuItem>
-      </Menu>
-      </div>
-
-
-        <div style={{width:'60%'}}>
-        <Carousel interval={3*1000}>
-          <Carousel.Item>
-            <img style={{width:'100%'}} height={500} 
-            src="https://next-images.123rf.com/index/_next/image/?url=https://assets-cdn.123rf.com/index/static/assets/top-section-bg.jpeg&w=3840&q=75" alt="" />
-            <Carousel.Caption>
-              <h3>First slide label</h3>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <img style={{width:'100%'}} height={500} 
-            src="https://next-images.123rf.com/index/_next/image/?url=https://assets-cdn.123rf.com/index/static/assets/top-section-bg.jpeg&w=3840&q=75" alt="" />
-            <Carousel.Caption>
-              <h3>Second slide label</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <img style={{width:'100%'}} height={500} 
-            src="https://next-images.123rf.com/index/_next/image/?url=https://assets-cdn.123rf.com/index/static/assets/top-section-bg.jpeg&w=3840&q=75" alt="" />
-
-            <Carousel.Caption>
-              <h3>Third slide label</h3>
-              <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-              </p>
-            </Carousel.Caption>
-          </Carousel.Item>
-        </Carousel>
-        </div>
 
     </>
 
@@ -274,4 +104,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default HomePage;
