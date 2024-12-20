@@ -6,7 +6,7 @@ const FeatureHighlights = () => {
     <div className="features-container">
       {/* Fast Delivery */}
       <div className="feature">
-        <FontAwesomeIcon icon={faTruckFast} className="icon" />
+        <FontAwesomeIcon icon={faTruckFast} className="featurehighlightsIcon" />
         <div>
           <h3>Fast Delivery</h3>
           <p>Start from $10</p>
@@ -18,7 +18,7 @@ const FeatureHighlights = () => {
 
       {/* Money Guarantee */}
       <div className="feature">
-        <FontAwesomeIcon icon={faPiggyBank} className="icon" />
+        <FontAwesomeIcon icon={faPiggyBank} className="featurehighlightsIcon" />
         <div>
           <h3>Money Guarantee</h3>
           <p>7 Days Back</p>
@@ -30,7 +30,7 @@ const FeatureHighlights = () => {
 
       {/* 365 Days */}
       <div className="feature">
-        <FontAwesomeIcon icon={faClock} className="icon" />
+        <FontAwesomeIcon icon={faClock} className="featurehighlightsIcon" />
         <div>
           <h3>365 Days</h3>
           <p>For free return</p>
@@ -42,7 +42,7 @@ const FeatureHighlights = () => {
 
       {/* Payment */}
       <div className="feature">
-        <FontAwesomeIcon icon={faCreditCard} className="icon" />
+        <FontAwesomeIcon icon={faCreditCard} className="featurehighlightsIcon" />
         <div>
           <h3>Payment</h3>
           <p>Secure system</p>

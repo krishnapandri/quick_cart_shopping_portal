@@ -1,5 +1,4 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { AnimatedUnderLineText } from "../AnimatedUnderLineText"
 export const RectBanner =  () => {
     return (
         <>
@@ -9,7 +8,8 @@ export const RectBanner =  () => {
                     <p className="m-0">NEW ARRIVALS</p>
                     <h4 className="m-0 pt-1">SKI CLOTHES SALE</h4>
                     <p>Up to 35% Off</p>
-                    <p>Shop Now <FontAwesomeIcon icon={faArrowRight} /></p>
+                    {/* <p>Shop Now <FontAwesomeIcon icon={faArrowRight} /></p> */}
+                    <AnimatedUnderLineText Text="Shop Now" />
                 </div>
                 <img src={'https://template.getbazaar.io/_next/image?url=%2Fassets%2Fimages%2Fbanners%2Fbanner-18.jpg&w=384&q=75'} alt="" />
             </div>
@@ -18,7 +18,8 @@ export const RectBanner =  () => {
                     <p className="m-0">NEW ARRIVALS</p>
                     <h4 className="m-0 pt-1">SKI CLOTHES SALE</h4>
                     <p>Up to 35% Off</p>
-                    <p>Shop Now <FontAwesomeIcon icon={faArrowRight} /></p>
+                    {/* <p>Shop Now <FontAwesomeIcon icon={faArrowRight} /></p> */}
+                    <AnimatedUnderLineText Text="Shop Now" Color="white" />
                 </div>
                 <img src={'https://template.getbazaar.io/_next/image?url=%2Fassets%2Fimages%2Fbanners%2Fbanner-19.jpg&w=384&q=75'} alt="" />
             </div>
@@ -27,7 +28,8 @@ export const RectBanner =  () => {
                     <p className="m-0">NEW ARRIVALS</p>
                     <h4 className="m-0 pt-1">SKI CLOTHES SALE</h4>
                     <p>Up to 35% Off</p>
-                    <p>Shop Now <FontAwesomeIcon icon={faArrowRight} /></p>
+                    {/* <p>Shop Now <FontAwesomeIcon icon={faArrowRight} /></p> */}
+                    <AnimatedUnderLineText Text="Shop Now" />
                 </div>
                 <img src={'https://template.getbazaar.io/_next/image?url=%2Fassets%2Fimages%2Fbanners%2Fbanner-20.jpg&w=384&q=75'} alt="" />
             </div>
