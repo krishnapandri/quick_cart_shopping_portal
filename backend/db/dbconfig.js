@@ -1,6 +1,7 @@
+require('dotenv').config();
 const config = {
-  server: 'DESKTOP-RAUS28B\\SQLEXPRESS',
-  database: 'QuickCartShoppingPortal',
+  server:process.env.DB_SERVER,
+  database: process.env.DB_DATABASE,
   options: {
     trustedConnection: true,
     trustServerCertificate: true,

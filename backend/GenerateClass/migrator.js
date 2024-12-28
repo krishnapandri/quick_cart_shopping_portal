@@ -78,9 +78,12 @@ static async ClearTable(){
     console.log(classStr);  // Optionally log the generated class string to the console
 
     // Write the generated class to a JavaScript file
-    const dirPath = path.join(__dirname,`../${tableName}`);
-    if(!fs.existsSync(dirPath))
-        fs.mkdirSync(dirPath);
+    const dirPath = path.join(__dirname, `../Migrations/${tableName}`);
+
+    // Ensure the table-specific directory exists
+    if (!fs.existsSync(dirPath)) {
+        fs.mkdirSync(dirPath,{ recursive: true });
+    }
     const filePath = `${dirPath}/${tableName}.js`;
     fs.writeFileSync(filePath, classStr);  // Write synchronously, you can also use writeFile for async
 
@@ -120,7 +123,7 @@ function mapSqlTypeToJsType(sqlType) {
   return sqlToJsMap[sqlType.toLowerCase()] || null;
 }
 
-generateClassFromTable('Reviews');
+
 
 module.exports =  function GenerateTableFromSql(TableName){
     try {
