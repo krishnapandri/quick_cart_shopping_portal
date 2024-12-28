@@ -1,0 +1,21 @@
+
+[
+  [
+    {
+      "ID": 1,
+      "Email": "krishnpandri001@gmail.com",
+      "Password": "123ram678",
+      "IsActive": 1,
+      "DateModifiedOn": "2024-12-23T20:43:58.060Z",
+      "CreatedOn": "2024-12-23T20:43:58.060Z"
+    },
+    {
+      "ID": 2,
+      "Email": "jaganpandri67@gmail.com",
+      "Password": "123ram",
+      "IsActive": 0,
+      "DateModifiedOn": "2024-12-23T20:44:48.640Z",
+      "CreatedOn": "2024-12-23T20:44:48.640Z"
+    }
+  ]
+]
